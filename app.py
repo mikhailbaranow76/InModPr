@@ -9,17 +9,15 @@ app = Flask(__name__)
 def render_index():
     return render_template('index.html')
 
-
-
-@app.route('/register', methods=['POST'])
+@app.route('/register')
 def render_register():
     return render_template('registrationLk.html')
 
-@app.route('/authenticate', methods=['POST'])
+@app.route('/auth')
 def render_auth():
     return render_template('loginLk.html')
 
-@app.route('/lk', methods=['GET'])
+@app.route('/lk')
 def render_lk():
     return render_template('lk.html')
 
